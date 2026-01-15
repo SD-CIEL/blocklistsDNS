@@ -1,0 +1,47 @@
+#Decommenter pour bloquer Internet
+#||*^$client=A120
+#||*^$client=A125
+#||*^$client=A117
+@@||ntserv4^$client=A120
+@@||SNIRW.branly^$client=A120
+@@||ntserv4^$client=A125
+@@||SNIRW.branly^$client=A125
+@@||ntserv4^$client=A117
+@@||SNIRW.branly^$client=A117
+
+# Les autres filtres sont dans des listes de blocage
+# - doh-blocklist.txt pour le DOH
+# - ia-blocklist.txt pour l'IA
+# ces fichiers sont dans https://github.com/SD-CIEL/blocklistsDNS.git
+# Note : DoH bloqué normalement sur chrome et edge par GPO mais pas Firefox
+
+# pour bloquer IA :
+#||openai.com^$important
+#||chatgpt.com^$important
+#||ab.chatgpt.com^$important
+#||chatgptfrancais.org^$important
+#||chatgptgratuit.app^$important
+#||claude.ai^$important
+#||claude.com^$important
+#||deepseek.com^$important
+#||mistral.ai^$important
+#||copilot.microsoft.com^$important
+#||proxy.individual.githubcopilot.com^$important
+#||api.individual.githubcopilot.com^$important
+#||gemini.google.com^$important
+#||gemini.google^$important
+#||unleash.codeium.com^$important
+#||grok.com^$important
+#||server.self-serve.windsurf.com^$important
+
+# DoH :
+#||cloudflare-dns.com^
+#||mozilla.cloudflare-dns.com^
+#||dns.google^
+#||dns.google.com^
+#||dns.google/dns-query^
+#||quad9.net^
+#||dns.nextdns.io^
+#||ios.dns.nextdns.io^
+#||android.dns.nextdns.io^
+#||dns.alidns.com^$important

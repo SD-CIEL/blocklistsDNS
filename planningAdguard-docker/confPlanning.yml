@@ -1,0 +1,15 @@
+adguard:
+  url: "http://192.168.0.100"
+  username: "admin"
+  password: ""
+  filter_name: "MalwareDomainList.com Hosts List"
+  filter_url: "https://www.malwaredomainlist.com/hostslist/hosts.txt"
+
+schedule:
+  - days: [mon, tue, wed, thu, fri]
+    start: "15:30"
+    end: "15:35"
+
+  - days: [sat, sun]
+    start: "00:00"
+    end: "23:59"

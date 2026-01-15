@@ -1,0 +1,57 @@
+! Liste de serveurs DoH publics connus
+! Format compatible AdGuard / Adblock
+! Dernière mise à jour : 2025-09-23
+! SD 2025
+
+! Google
+||dns.google^
+||dns64.dns.google^
+||dns.google.com^
+
+! Cloudflare mozilla
+||cloudflare-dns.com^
+||mozilla.cloudflare-dns.com^
+||security.cloudflare-dns.com^
+||family.cloudflare-dns.com^
+||canary-doh.firebaseapp.com^
+
+! Quad9
+||dns.quad9.net^
+
+! NextDNS
+||dns.nextdns.io^
+||ios.dns.nextdns.io^
+
+! AliDNS (Alibaba)
+||dns.alidns.com^
+
+! CleanBrowsing
+||doh.cleanbrowsing.org^
+
+! Comcast / Xfinity
+||doh.xfinity.com^
+
+! OpenDNS / Cisco
+||doh.opendns.com^
+
+! Mullvad
+||doh.mullvad.net^
+
+! Google Chrome Canary/Tests
+||use-application-dns.net^
+
+! Edge
+||dns.msftncsi.com^
+||dns.microsoft.com^
+||doh.microsoft.com^
+
+! AdGuard
+||dns.adguard.com^
+||dns-family.adguard.com^
+||dns-unfiltered.adguard.com^
+
+! OpenNIC
+||doh.libredns.gr^
+||doh.dns.sb^
+||doh.captnemo.in^
+||dnsforge.de^

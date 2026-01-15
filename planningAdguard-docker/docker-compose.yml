@@ -1,0 +1,6 @@
+services:
+  adguard-scheduler:
+    build: .
+    volumes:
+      - ./confPlanning.yml:/app/confPlanning.yml
+    restart: unless-stopped

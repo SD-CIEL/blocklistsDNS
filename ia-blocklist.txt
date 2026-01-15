@@ -1,0 +1,18 @@
+# pour bloquer IA :
+||openai.com^$important
+||chatgpt.com^$important
+||ab.chatgpt.com^$important
+||chatgptfrancais.org^$important
+||chatgptgratuit.app^$important
+||claude.ai^$important
+||claude.com^$important
+||deepseek.com^$important
+||mistral.ai^$important
+||copilot.microsoft.com^$important
+||proxy.individual.githubcopilot.com^$important
+||api.individual.githubcopilot.com^$important
+||gemini.google.com^$important
+||gemini.google^$important
+||unleash.codeium.com^$important
+||grok.com^$important
+||server.self-serve.windsurf.com^$important

@@ -1,0 +1,9 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+COPY planningAdguard.py confPlanning.yml ./
+
+RUN pip install requests pyyaml
+
+CMD ["python", "planningAdguard.py"]
