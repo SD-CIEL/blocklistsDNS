@@ -8,11 +8,17 @@ import yaml
 import requests
 import datetime
 import time
+import os
 
 DAYS_MAP = {
     "mon": 0, "tue": 1, "wed": 2,
     "thu": 3, "fri": 4, "sat": 5, "sun": 6
 }
+
+def load_config_with_mtime(path):
+    with open(path, "r") as f:
+        return yaml.safe_load(f), os.path.getmtime(path)
+
 
 def load_config():
     with open("confPlanning.yml", "r") as f:
@@ -68,13 +74,27 @@ def should_be_disabled(now, weekday, schedule):
     return False
 
 def main():
-    config = load_config()
+    CONFIG_FILE = "confPlanning.yml"
+
+    config, last_mtime = load_config_with_mtime(CONFIG_FILE)
+
+    #config = load_config()
     adg = config["adguard"]
     schedule = config["schedule"]
 
     filter_currently_enabled = True  # état local supposé au démarrage
 
     while True:
+
+        current_mtime = os.path.getmtime(CONFIG_FILE)
+
+        if current_mtime != last_mtime:
+           print("\n🔄 Rechargement du planning détecté", flush=True)
+           config, last_mtime = load_config_with_mtime(CONFIG_FILE)
+           adg = config["adguard"]
+           schedule = config["schedule"]
+
+
         now = datetime.datetime.now()
         weekday = now.weekday()
         current_time = now.time()
@@ -91,6 +111,7 @@ def main():
             set_filter_state(adg, enabled=True)
             filter_currently_enabled = True
 
+        print("*", end="", flush=True)
         time.sleep(60)
 
 if __name__ == "__main__":

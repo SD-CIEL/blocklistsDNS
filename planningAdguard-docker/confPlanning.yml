@@ -1,15 +1,23 @@
 adguard:
-  url: "http://192.168.0.100"
+  url: "http://172.17.50.240:83"
   username: "admin"
   password: ""
-  filter_name: "MalwareDomainList.com Hosts List"
-  filter_url: "https://www.malwaredomainlist.com/hostslist/hosts.txt"
+  filter_name: "IA"
+  filter_url: "https://raw.githubusercontent.com/SD-CIEL/blocklistsDNS/refs/heads/main/ia-blocklist.txt"
 
 schedule:
-  - days: [mon, tue, wed, thu, fri]
-    start: "15:30"
-    end: "15:35"
+  - days: [mon]
+    start: "8:00"
+    end: "10:00"
 
-  - days: [sat, sun]
-    start: "00:00"
-    end: "23:59"
+  - days: [mon]
+    start: "14:00"
+    end: "18:00"
+
+  - days: [tue]
+    start: "8:00"
+    end: "12:00"
+
+  - days: [thu]
+    start: "8:00"
+    end: "13:00"

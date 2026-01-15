@@ -1,6 +1,8 @@
 services:
   adguard-scheduler:
     build: .
+    environment:
+      - TZ=Europe/Paris
     volumes:
       - ./confPlanning.yml:/app/confPlanning.yml
     restart: unless-stopped
