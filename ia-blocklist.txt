@@ -112,6 +112,7 @@
 ||moonshot.cn^$important
 ||moonshot.ai^$important
 ||api.moonshot.cn^$important
+||kimi.ia^$important
 
 # Zhipu AI (GLM / ChatGLM)
 ||chatglm.cn^$important
