@@ -1,18 +1,127 @@
-# pour bloquer IA :
+# ============================
+# Blocage IA - Liste complète
+# ============================
+
+# OpenAI / ChatGPT
 ||openai.com^$important
 ||chatgpt.com^$important
 ||ab.chatgpt.com^$important
 ||chatgptfrancais.org^$important
 ||chatgptgratuit.app^$important
+
+# Anthropic / Claude
 ||claude.ai^$important
 ||claude.com^$important
+||anthropic.com^$important
+
+# DeepSeek
 ||deepseek.com^$important
+
+# Mistral
 ||mistral.ai^$important
+
+# Microsoft Copilot / Bing
 ||copilot.microsoft.com^$important
+||bing.com/chat^$important
+||edgeservices.bing.com^$important
+
+# GitHub Copilot
 ||proxy.individual.githubcopilot.com^$important
 ||api.individual.githubcopilot.com^$important
+||copilot-proxy.githubusercontent.com^$important
+||githubcopilot.com^$important
+
+# Google Gemini / Bard / AI Studio
 ||gemini.google.com^$important
 ||gemini.google^$important
+||bard.google.com^$important
+||aistudio.google.com^$important
+||generativelanguage.googleapis.com^$important
+
+# Codeium / Windsurf
 ||unleash.codeium.com^$important
-||grok.com^$important
+||codeium.com^$important
 ||server.self-serve.windsurf.com^$important
+
+# xAI / Grok
+||grok.com^$important
+||x.ai^$important
+
+# Meta AI
+||meta.ai^$important
+||ai.meta.com^$important
+
+# Perplexity
+||perplexity.ai^$important
+
+# Character.AI
+||character.ai^$important
+
+# Poe (Quora)
+||poe.com^$important
+
+# HuggingFace
+||huggingface.co^$important
+
+# Stability AI
+||stability.ai^$important
+
+# Midjourney
+||midjourney.com^$important
+
+# Cohere
+||cohere.com^$important
+||cohere.ai^$important
+
+# You.com
+||you.com^$important
+
+# Cursor
+||cursor.sh^$important
+||cursor.com^$important
+
+# Replit AI
+||replit.com/ai^$important
+
+# Jasper AI
+||jasper.ai^$important
+
+# ElevenLabs
+||elevenlabs.io^$important
+
+# Runway
+||runwayml.com^$important
+
+# Notion AI
+||notion.so/ai^$important
+
+# ============================
+# IA chinoises
+# ============================
+
+# Alibaba Qwen
+||qwen.ai^$important
+||tongyi.aliyun.com^$important
+
+# Baidu Ernie
+||yiyan.baidu.com^$important
+
+# Kimi (Moonshot AI)
+||kimi.moonshot.cn^$important
+||kimi.com^$important
+||moonshot.cn^$important
+||moonshot.ai^$important
+||api.moonshot.cn^$important
+
+# Zhipu AI (GLM / ChatGLM)
+||chatglm.cn^$important
+||zhipuai.cn^$important
+||bigmodel.cn^$important
+
+# 01.AI (Yi)
+||01.ai^$important
+||lingyiwanwu.com^$important
+
+# iFlytek Spark
+||xfyun.cn^$important
+||xinghuo.xfyun.cn^$important
